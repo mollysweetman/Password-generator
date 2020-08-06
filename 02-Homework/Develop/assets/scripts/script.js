@@ -1,4 +1,7 @@
 
+  
+// Alert user to click the Generate Password button
+alert("Hello, Please click 'Generate Button' to start");
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -13,11 +16,9 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// function generatePassword() {}
 
 
-function generatePassword() {
- 
-}
 
 //prompted for length of password between 8 and 128 characters
 var lenPass = prompt("Please enter the length of password");
@@ -25,9 +26,9 @@ var lenPass = prompt("Please enter the length of password");
 parseInt(lenPass, 10); 
 parseInt(lenPass, 10) < 8
 parseInt(lenPass, 10) > 128
-// Create variable that will store user input
 
-while (isNaN(parseInt(lenPass), 10)) || parseInt((lenPass) ,10) < 8 || parseInt((lenPass) > 128) {
+// Create variable that will store user input
+while (isNaN(parseInt(lenPass), 10) || parseInt((lenPass) ,10) < 8 || parseInt((lenPass) > 128)) {
   prompt("Please enter the length of password");
 }
 
@@ -58,23 +59,25 @@ if (lowCase) {
 console.log(charSets);
 
 // adding upper case letters
-if (uppCase) {
+else (uppCase) {
   charSets += charUpper;
 }
 console.log(charSets);
 
 // adding numbers
-if (numbers) {
+else (numbers) {
   charSets += charNum
 }
 console.log(charSets);
 
 // adding symbols
-if (specChar) {
+else  (specChar) {
   charSets += CharSym;
 }
 console.log(charSets);
-// add ifs for other var
+
+
+
 // think about what if user chooses none?
 
 // Create a for loop to generate a random password for user 
@@ -89,11 +92,6 @@ password += charSets[random];
 
 
 
-
-
-
-// Alert user to click the Generate Password button
-alert("Hello, Please click 'Generate Button' to start");
 
 
 
